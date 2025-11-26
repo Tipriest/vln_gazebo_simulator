@@ -1,0 +1,24 @@
+[submodule "src/DynamixelSDK"]
+	path = src/DynamixelSDK
+	url = git@github.com:Tipriest/DynamixelSDK.git
+	branch = humble
+[submodule "src/joystick_node"]
+	path = src/joystick_node
+	url = git@github.com:Tipriest/joystick_node.git
+	branch = ros2/humble
+[submodule "src/joystick_to_cmdvel"]
+	path = src/joystick_to_cmdvel
+	url = git@github.com:Tipriest/joystick_to_cmdvel.git
+	branch = ros2/humble
+[submodule "src/turtlebot3"]
+	path = src/turtlebot3
+	url = git@github.com:Tipriest/turtlebot3.git
+	branch = humble
+[submodule "src/turtlebot3_msgs"]
+	path = src/turtlebot3_msgs
+	url = git@github.com:ROBOTIS-GIT/turtlebot3_msgs.git
+	branch = humble
+[submodule "src/turtlebot3_simulations"]
+	path = src/turtlebot3_simulations
+	url = git@github.com:ROBOTIS-GIT/turtlebot3_simulations.git
+	branch = humble
