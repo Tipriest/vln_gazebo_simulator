@@ -3,26 +3,35 @@ hello and welcome
 
 ## Install
 ```bash
-git clone -b humble git@github.com:ROBOTIS-GIT/DynamixelSDK.git
+git clone git@github.com:Tipriest/vln_gazebo_simulator.git
+git submodule update --init --recursive
 ```
-
-
 
 ## Build
 ```bash
-cd ~/turtlebot3_ws/src/
-git clone -b humble https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
-cd ~/turtlebot3_ws && colcon build --symlink-install
+colcon build --symlink-install
+```
 
+
+## Usage
+```bash
+# first use echo to select turtle_robot model
+# options: burger, waffle, waffle_pi, etc
 export TURTLEBOT3_MODEL=burger
+
+# source
+source install/setup.zsh
+
+# launch gazebo world files(optional)
 ros2 launch turtlebot3_gazebo empty_world.launch.py
+# ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
+# ros2 launch turtlebot3_gazebo turtlebot3_house.launch.py
 
-export TURTLEBOT3_MODEL=waffle
-ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
-
-export TURTLEBOT3_MODEL=waffle_pi
-ros2 launch turtlebot3_gazebo turtlebot3_house.launch.py
+# launch control method
+# use keyboard control
 ros2 run turtlebot3_teleop teleop_keyboard
+# use joystick control
+ros2 launch turtlebot3_gazebo turtlebot3_joystick_ctl.py
 ```
 
 ## Reference
