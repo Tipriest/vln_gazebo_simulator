@@ -16,9 +16,9 @@
 	branch = humble
 [submodule "src/turtlebot3_msgs"]
 	path = src/turtlebot3_msgs
-	url = git@github.com:ROBOTIS-GIT/turtlebot3_msgs.git
+	url = git@github.com:Tipriest/turtlebot3_msgs.git
 	branch = humble
 [submodule "src/turtlebot3_simulations"]
 	path = src/turtlebot3_simulations
-	url = git@github.com:ROBOTIS-GIT/turtlebot3_simulations.git
+	url = git@github.com:Tipriest/turtlebot3_simulations.git
 	branch = humble
