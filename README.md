@@ -1,7 +1,7 @@
 # README.md
 
 <div align="center" style="margin: 20px 0;">
-  <img src="assets/intro.png"
+  <img src="assets/intro2.png"
        alt="intro image"
        title="intro image for vln gazebo simulator"
        width="800"
