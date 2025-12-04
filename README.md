@@ -1,10 +1,10 @@
 # README.md
 
 <div align="center" style="margin: 20px 0;">
-  <img src="assets/intro.png" 
-       alt="intro image" 
+  <img src="assets/intro.png"
+       alt="intro image"
        title="intro image for vln gazebo simulator"
-       width="800" 
+       width="800"
        style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);"
        loading="lazy"/>
 </div>
@@ -49,6 +49,7 @@ source install/setup.zsh
 ros2 launch turtlebot3_gazebo empty_world.launch.py
 # ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
 # ros2 launch turtlebot3_gazebo turtlebot3_house.launch.py
+# ros2 launch turtlebot3_gazebo turtlebot3_00829.launch.py
 
 # launch control method
 # use keyboard control
