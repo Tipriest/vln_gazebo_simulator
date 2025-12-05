@@ -40,7 +40,7 @@ colcon build --symlink-install
 ```bash
 # first use echo to select turtle_robot model
 # options: burger, waffle, waffle_pi, etc
-export TURTLEBOT3_MODEL=burger
+export TURTLEBOT3_MODEL=waffle_pi
 
 # source
 source install/setup.zsh
