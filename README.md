@@ -28,9 +28,19 @@
 ```bash
 git clone git@github.com:Tipriest/vln_gazebo_simulator.git
 git submodule update --init --recursive
+sudo apt install ros-humble-gazebo-ros
+sudo apt install ros-humble-gazebo-ros-pkgs
+```
+### 2.2 下载Gazebo Models并放在指定路径
+```bash
+mkdir -p ~/.gazebo/models
+cd ~/.gazebo/models
+git clone git@github.com:osrf/gazebo_models.git
+mv gazebo_models/* .
+rm -rf gazebo_models/
 ```
 
-### 2.2 编译
+### 2.3 编译
 ```bash
 colcon build --symlink-install
 ```
