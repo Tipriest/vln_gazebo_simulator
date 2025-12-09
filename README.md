@@ -14,8 +14,7 @@
 - 支持切换仿真的机器人模型
   - [TODO] 增加轮式平台的双臂机器人模型
 - 支持切换仿真的世界模型
-  - 查看是否有将现有的hm3d数据集转换为gazebo环境的办法
-  - 如果没有的话，需要自行搭建与hm3d中实际使用的环境相似的sdf环境
+  - 使用blender将现有的hm3d数据集转换为gazebo环境
 - 支持多种操纵方式
   - 基于键盘对小车进行控制
   - 基于手柄对小车进行控制
@@ -28,9 +27,19 @@
 ```bash
 git clone git@github.com:Tipriest/vln_gazebo_simulator.git
 git submodule update --init --recursive
+sudo apt install ros-humble-gazebo-ros
+sudo apt install ros-humble-gazebo-ros-pkgs
+```
+### 2.2 下载Gazebo Models并放在指定路径
+```bash
+mkdir -p ~/.gazebo/models
+cd ~/.gazebo/models
+git clone git@github.com:osrf/gazebo_models.git
+mv gazebo_models/* .
+rm -rf gazebo_models/
 ```
 
-### 2.2 编译
+### 2.3 编译
 ```bash
 colcon build --symlink-install
 ```
