@@ -67,5 +67,8 @@ ros2 run turtlebot3_teleop teleop_keyboard
 ros2 launch turtlebot3_gazebo turtlebot3_joystick_ctl.py
 ```
 
-## 四. 参考资料
+## 四. 其他事项
+1. [与vln_gazebo_simulator的坐标转换问题说明](./docs/坐标转换.md)
+
+## 五. 参考资料
 [turtlebot3的官方文档](https://emanual.robotis.com/docs/en/platform/turtlebot3/simulation/#gazebo-simulation)
